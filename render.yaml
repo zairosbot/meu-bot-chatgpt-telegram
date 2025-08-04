@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: meu-bot-chatgpt-telegram
+    env: python
+    buildCommand: ""
+    startCommand: "python main.py"
+    plan: free
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
